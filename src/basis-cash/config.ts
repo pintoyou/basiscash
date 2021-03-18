@@ -2,7 +2,7 @@ import { Deployments } from './deployments';
 
 
 export type Configuration = {
-  chainId: string,
+  chainId: number,
   etherscanUrl: string,
   defaultProvider: string,
   deployments: Deployments,
