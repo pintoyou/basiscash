@@ -6,9 +6,9 @@ import { BigNumber } from 'ethers';
 
 const configurations: { [env: string]: Configuration } = {
   development: {
-    chainId: ChainId.MAINNET,
-    etherscanUrl: 'https://etherscan.io',
-    defaultProvider: 'https://mainnet.infura.io/v3/06ecf536272c43c78adfba29b908a68d',
+    chainId: '56',
+    etherscanUrl: 'https://bscscan.com',
+    defaultProvider: 'https://bsc-dataseed.binance.org/',
     deployments: require('./basis-cash/deployments/deployments.mainnet.json'),
     externalTokens: {
       DAI: ['0x6B175474E89094C44Da98b954EedeAC495271d0F', 18],
