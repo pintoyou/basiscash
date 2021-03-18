@@ -14,7 +14,7 @@ import Bond from './views/Bond';
 
 import store from './state';
 import theme from './theme';
-import config from './config';
+import chainId from './config';
 import Updaters from './state/Updaters';
 import Boardroom from './views/Boardroom';
 import Popups from './components/Popups';
@@ -45,7 +45,7 @@ const App: React.FC = () => {
 const Providers: React.FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <UseWalletProvider chainId={config.chainId}>
+      <UseWalletProvider chainId={chainId}>
         <Provider store={store}>
           <Updaters />
           <BasisCashProvider>
